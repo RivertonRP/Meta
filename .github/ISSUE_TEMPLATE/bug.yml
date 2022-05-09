@@ -1,0 +1,47 @@
+name: Bug Report
+description: Report a bug on RivertonRP
+title: "[BUG]: "
+labels: ["Bug", "e: none", "s: pending"]
+
+body:
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Confirm all of these are checked and valid.
+      options:
+        - label: I have read and agree to the README (found on https://github.com/RivertonRP/Meta)
+          required: true
+        - label: I am NOT reporting a security vulnerability
+          required: true
+        - label: I have searched the Issue Tracker to make sure this is not a duplicate issue
+          required: true
+        - label: This issue does not contain any sensitive information
+          required: true
+  - type: textarea
+    id: bug
+    attributes:
+      label: What happened that broke everything?
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen to prevent it from breaking everything?
+      description: What is the expected behavior of the action?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can I do it?
+      description: Steps to reproduce the behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: image
+    attributes:
+      label: Images?
+      description: If applicable, add screenshots, short videos/GIFs to help explain your problem
+  
